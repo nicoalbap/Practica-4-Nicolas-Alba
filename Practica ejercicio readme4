@@ -1,0 +1,10 @@
+Select nombre, usuario from empleado inner join usuario 
+on empleado.idempleado = usuario.idempleado;
+
+Select email from empleado inner join usuario
+on empleado.idempleado = usuario.idempleado
+and usuario.activo = 1;
+
+Select count(*) as 'numero de publicaciones' from publicacion where autor='Eric G. Coronel Castillo';
+
+Select sum(precio) as 'Emilio vendio el valor de: ' from venta where venta.idempleado=1; 
